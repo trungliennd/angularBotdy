@@ -1,0 +1,128 @@
+<!-- Site header and  navigation -->
+<header class="plain-header" role="banner">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand btn">
+                    <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+                    Icon
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!--    Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light" routerLink="">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light" routerLink="about">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn btn-outline-light" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" routerLink="">Action</a>
+                            <a class="dropdown-item" routerLink="">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" routerLink="">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sign btn-outline-light">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="overlay"></div>
+<div class="main-popup">
+    <div class="popup-header">
+        <div id="popup-close-button"><a class="btn" id="close"></a></div>
+        <ul>
+            <li><a class="btn" id="sign-in">Sign In</a></li>
+            <li><a class="btn" id="register">Register</a></li>
+        </ul>
+    </div>
+    <div class="popup-content">
+        <form action="#" class="sign-in">
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <p class="check-mark">
+                <input type="checkbox" class="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </p>
+            <input type="submit" id="submit1" value="Submit">
+        </form>
+
+        <form action="#" class="register">
+            <label for="email-register">Email:</label>
+            <input type="text" id="email-register">
+            <label for="password-register">Password:</label>
+            <input type="password" id="password-register">
+            <label for="password-confirmation">Confirm Password:</label>
+            <input type="password" id="password-confirmation">
+            <p class="check-mark">
+                <input type="checkbox" id="accept-terms">
+                <label for="accept-terms">I agree to the <a href="#">Terms</a></label>
+            </p>
+            <input type="submit" id="submit2" value="Create Account">
+        </form>
+    </div> <!-- popup-content -->
+</div> <!-- main-popup -->
+<a class="btn btn-button btn-facebook mobilefacebook scale" href="#">
+    <img src="https://chatfuel.com/static/landing/v3/images/buttons/facebook.svg"> Sign in with Facebook
+</a>
+<router-outlet></router-outlet>
+<footer class="footer">
+    <section class="section_footer">
+        <div class="container">
+            <div class="footerlinks">
+                <div class="column mini">
+                    <div class="caption">
+                        <img class="flogo" src="" alt="">
+                    </div>
+                    <div class="text">© 2018</div>
+                </div>
+                <div class="column">
+                    <div class="caption">About Us</div>
+                    <div class="links">
+                        <a href="#">Company</a>
+                        <a href="#">Bots by Botdy</a>
+                        <a href="#">Our Community</a>
+                        <a href="#">Careers</a>
+                        <a href="Blog"></a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="caption">Services</div>
+                    <div class="links">
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Media Kit</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="caption">Follow Us</div>
+                    <div class="sociallinks">
+                        <a href="#"><img src="https://chatfuel.com/static/landing/v3/images/social/fb.svg" style="width: 10px"></a>
+                        <a href="#"><img src="https://chatfuel.com/static/landing/v3/images/social/yt.svg" style="width: 20px"></a>
+                        <a href="#"><img src="https://chatfuel.com/static/landing/v3/images/social/tw.svg" style="width: 20px"></a>
+                        <a href="#"><img src="https://chatfuel.com/static/landing/v3/images/social/tg.svg" style="width: 19px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>

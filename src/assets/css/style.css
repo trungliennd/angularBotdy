@@ -1,0 +1,2123 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+}
+
+b {
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Custom;
+    src: url("../font/custom.woff");
+}
+
+body {
+    font-family: Custom, sans-serif;
+    font-size: 24px;
+    line-height: 130%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: #f9f8f8;
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100vw;
+}
+
+.scale {
+    transform-origin: 0 0;
+    overflow: hidden;
+}
+
+@media (max-width: 544px) {
+    .btn-button.mobilefacebook {
+        display: none;
+        position: fixed;
+        z-index: 5;
+        left: 50%;
+        width: 244px;
+        height: 47px;
+        bottom: 8vw;
+        margin-left: -122px;
+        border-radius: 8px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        padding-left: 40px;
+        padding-right: 0px;
+        pointer-events: all;
+        transform-origin: 50%;
+        opacity: 1 !important;
+    }
+    .button.mobilefacebook img {
+        width: 16px;
+        top: 10px;
+        left: 13px;
+    }
+
+    .button.mobilefacebook {
+        display: block;
+    }
+}
+
+@media (min-width: 545px) {
+    .btn-button.mobilefacebook {
+        background-color: #208ef0;
+        border-radius: 8px;
+        color: white;
+        font-size: 20px;
+        height: 48px;
+        display: inline-block;
+        padding: 9px 25px 0px 19px;
+        transition: all linear 0.3s;
+        opacity: 0;
+        position: fixed;
+        right: 32px;
+        bottom: 32px;
+        z-index: 10;
+        width: 280px;
+        padding-left: 49px;
+        transform-origin: 100%;
+    }
+}
+
+
+.btn-button.message {
+    padding-left: 50px;
+    padding-right: 27px;
+}
+
+.btn-button.message img{
+    width: 16px;
+    position: absolute;
+    top: 17px;
+    left: 16px;
+}
+
+.btn-button.message {
+    text-decoration: none;
+}
+
+.name {
+    text-decoration: none;
+}
+
+.btn-button:hover {
+    background-color: #29487d;
+}
+
+@media (max-width: 544px) {
+    .btn-button.message {
+        height: 37px;
+        font-size: 16px;
+        background-position: 11px 9px;
+        padding-left: 39px;
+    }
+
+    .btn-button.message img {
+        width: 18px;
+        position: absolute;
+        top: 9px;
+        left: 11px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .scale {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .scale {
+        width: 1024px;
+    }
+}
+
+@media (max-width: 544px) {
+    .scale {
+        width: 320px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    section.section_welcome .iphone {
+        overflow: hidden;
+    }
+
+    section.section_welcome .iphone img.phone {
+        width: 110%;
+        margin-left: -5%;
+    }
+
+
+
+}
+
+
+section.section_welcome {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    background-color: #f9f8f8;
+    position: relative;
+}
+
+section.section_welcome .container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.section_welcome .container .sectioncaption {
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px;
+}
+
+section.section_welcome .container .buildtext {
+    color: #cccccc;
+    margin-top: -40px;
+    position: relative;
+    margin-bottom: 7%;
+    z-index: 2;
+}
+
+section.section_welcome .container .quoteblock {
+    background-color: white;
+    border-radius: 16px;
+    max-width: 898px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 30px;
+}
+
+section.section_welcome .container .quoteblock .up .name span:hover {
+    color: black;
+}
+
+section.section_welcome .container .quoteblock .up .name {
+    font-size: 20px;
+    margin-left: 8px;
+    text-decoration: none;
+}
+
+section.section_welcome .container .quoteblock .up .name img {
+    vertical-align: middle;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+section.section_welcome .container .quoteblock .up .name .mobile {
+    display: none;
+}
+
+section.section_welcome .container .quoteblock .down .bytelondon {
+    padding-top: 15px;
+    display: inline-block;
+}
+
+section.section_welcome .container .quoteblock .down .bytelondon img {
+    max-width: 100%;
+    height: auto;
+}
+
+section.section_welcome .container .quoteblock .down .bytelondon .mobile {
+    display: none;
+}
+
+section.section_welcome .container .quoteblock .down .bytelondon:hover {
+    opacity: 0.8;
+}
+
+section.section_welcome .container .magazines {
+    display: flex;
+    justify-content: space-between;
+    max-width: 840px;
+    margin: 70px auto 0px auto;
+}
+
+section.section_welcome .container .magazines a {
+    height: 40px;
+    text-align: center;
+}
+
+section.section_welcome .container .magazines a img {
+    max-width: 100%;
+    width: auto;
+}
+
+section.section_welcome .container .magazines a .mobile {
+    display: none;
+}
+
+section.section_welcome .container .magazines a:hover {
+    opacity: 0.8;
+}
+
+section.section_welcome .container .magazines .techcrunch {
+    padding-top: 3px;
+}
+
+section.section_welcome .container .magazines .economist {
+    padding-top: 2px;
+}
+
+section.section_welcome .container .magazines .forbes {
+    padding-top: 4px;
+}
+
+section.section_welcome .container .magazines .wallstreet {
+    padding-top: 0px;
+}
+
+section.section_welcome .container .magazines .bloomberg {
+    padding-top: 7px;
+}
+
+section.section_welcome .container .magazines .vb {
+    padding-top: 5px;
+}
+
+section.section_automate {
+    text-align: center;
+    padding-top: 70px;
+    position: relative;
+    background-color: #fff;
+}
+
+section.section_automate .container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.section_templates {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    background-color: #f9f8f8;
+    position: relative;
+}
+
+section.section_templates .container .sectioncaption {
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section.section_templates .container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.section_templates .container .sectiontext {
+    text-align: center;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+section.section_templates .overflow {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+section.section_templates .mobilelogos {
+    display: none;
+    width: 2073px;
+    height: 321px;
+    margin-left: 35px;
+    position: relative;
+    transition: transform 40s linear;
+    transform: translateY(0px);
+}
+
+section.section_templates .mobilelogos img {
+    width: 100%;
+    height: 321px;
+}
+
+section.section_templates .sites {
+    transition: transform 80s linear;
+    transform: translateY(0px);
+    display: flex;
+    justify-content: space-between;
+    width: 1583px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -790px;
+}
+
+section.section_templates .sites .site {
+    width: 240px;
+    height: 320px;
+    position: relative;
+}
+
+section.section_templates .sites .site img {
+    position: absolute;
+    z-index: 2;
+}
+
+section.section_templates .sites .site .caption, section.section_templates .sites .site .text {
+    position: absolute;
+    text-align: left;
+    left: 25px;
+    right: 25px;
+    z-index: 2;
+}
+
+section.section_templates .sites .site .caption {
+    bottom: 105px;
+    color: white;
+    line-height: 95%;
+}
+
+section.section_templates .sites .site .text {
+    bottom: 65px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+section.section_templates .sites .site .previewbutton {
+    position: absolute;
+    z-index: 2;
+    bottom: 22px;
+    left: 50%;
+    margin-left: -50px;
+    font-size: 16px;
+    width: 100px;
+    color: white;
+    padding: 1px 10px 3px 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    line-height: 150%;
+}
+
+section.section_templates .sites .site .bg {
+    background-color: pink;
+    position: absolute;
+    border-radius: 12px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+section.section_templates .sites .site:hover .bg {
+    transform: scale(1.02);
+}
+
+section.section_templates .sites .site.quiz .bg {
+    background-color: #053748;
+}
+
+section.section_templates .sites .site.quiz img {
+    top: 50px;
+    margin-left: -50px;
+    left: 50%;
+}
+
+section.section_templates .sites .site.influencer .bg {
+    background-color: #c30001;
+}
+
+section.section_templates .sites .site.influencer img {
+    top: 50px;
+    margin-left: -50px;
+    left: 50%;
+}
+
+section.section_templates .sites .site.shopify .bg {
+    background-color: #fff;
+}
+
+section.section_templates .sites .site.shopify img {
+    top: 50px;
+    margin-left: -50px;
+    left: 50%;
+}
+
+section.section_templates .sites .site.shopify .caption {
+    color: black;
+}
+
+section.section_templates .sites .site.shopify .text {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+section.section_templates .sites .site.shopify .previewbutton {
+    color: black;
+}
+
+section.section_templates .sites .site.realestateagent .bg {
+    background-color: #053748;
+}
+
+section.section_templates .sites .site.realestateagent img {
+    top: 50px;
+    margin-left: -50px;
+    left: 50%;
+}
+
+section.section_templates .sites .site.publisher .bg {
+    background-color: #089e00;
+}
+
+section.section_templates .sites .site.publisher img {
+    top: 50px;
+    margin-left: -66px;
+    left: 50%;
+}
+
+section.section_templates .sites .site.giphy .bg {
+    background-color: black;
+}
+
+section.section_templates .sites .site.giphy img {
+    top: 30px;
+    margin-left: -70px;
+    left: 50%;
+}
+
+section.section_templates .sites .site.appointmentbooking .bg {
+    background-color: #f06040;
+}
+
+section.section_templates .sites .site.appointmentbooking img {
+    top: 30px;
+    margin-left: -50px;
+    left: 50%;
+}
+
+section.section_templates .sites .site.dialogflow .bg {
+    background-color: #8fe8ff;
+}
+
+section.section_templates .sites .site.dialogflow img {
+    top: 25px;
+    margin-left: -50px;
+    left: 50%;
+}
+
+section.section_templates .sites .site.dialogflow .caption {
+    color: black;
+}
+
+section.section_templates .sites .site.dialogflow .text {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+section.section_templates .sites .site.dialogflow .previewbutton {
+    color: black;
+}
+
+section.section_contact {
+    padding-top: 110px;
+    padding-bottom: 170px;
+    background-color: #f9f8f8;
+    position: relative;
+}
+
+section.section_contact .container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+}
+
+
+@media (max-width: 1100px) {
+    section.section_automate .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    section.section_welcome .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    section.section_templates .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    section.section_contact .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+}
+
+@media (max-width: 544px) {
+    section.section_automate .container {
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+
+    section.section_welcome .container {
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+
+    section.section_automate .container .sectioncaption {
+        font-size: 32px;
+        letter-spacing: -1.6px;
+        margin-left: -1px;
+        margin-bottom: 15px;
+    }
+
+    section.section_templates .container .sectioncaption {
+        font-size: 32px;
+        letter-spacing: -1.6px;
+        margin-bottom: 15px;
+        margin-left: -1px;
+    }
+
+    section.section_contact .container {
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+}
+
+section.section_automate .container .sectioncaption {
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.section_automate .container .sectiontext {
+    text-align: center;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    letter-spacing: -0.4px;
+}
+
+section.section_automate .container .iphone {
+    width: 501px;
+    height: 511px;
+    margin: 60px auto 0px auto;
+    position: relative;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.section_automate .container .iphone img.phone {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+section.section_automate .container .iphone .phoneup {
+    position: absolute;
+    top: 80px;
+    left: 24px;
+    z-index: 2;
+}
+
+section.section_automate .container .iphone .shadow {
+    width: 700px;
+    height: 610px;
+    position: absolute;
+    right: -101px;
+    bottom: 0px;
+    left: -100px;
+    z-index: 1;
+    pointer-events: none;
+    background: url("https://chatfuel.com/static/landing/v3/images/iphone_facebook_shadow.png");
+}
+
+@media (-webkit-max-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    section.section_automate .container .iphone .shadow {
+        background: url("https://chatfuel.com/static/landing/v3/images/iphone_facebook_shadow2xd.png");
+        background-size: 100%;
+    }
+}
+
+section.section_automate .container .iphone .notifications {
+    position: absolute;
+    top: 121px;
+    right: 40px;
+    bottom: 0px;
+    left: 40px;
+    overflow: hidden;
+    z-index: 3;
+    font-family: Arial;
+    text-align: left;
+}
+
+section.section_automate .container .iphone .notifications .item {
+    margin-bottom: 8px;
+    background-color: #f9f8f8;
+    border-radius: 16px;
+    padding: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+section.section_automate .container .iphone .notifications .item .caption {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+section.section_automate .container .iphone .notifications .item .caption img {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+section.section_automate .container .iphone .notifications .item .caption .now {
+    float: right;
+    color: rgba(0 , 0, 0, 0.4);
+    margin-right: 8px;
+}
+
+section.section_automate .container .iphone .notifications .item .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: -9px;
+    margin-top: -2px;
+}
+
+section.section_automate .container .iphone .notifications .item .massage {
+    font-size: 18px;
+    letter-spacing: -0.2px;
+}
+
+section.section_automate .flag {
+    position: absolute;
+    right: 74px;
+    bottom: 80px;
+    z-index: 3;
+}
+
+section.section_automate .flag img {
+    width: 86px;
+    height: 86px;
+    display: block;
+    margin: auto;
+}
+
+section.section_automate .flag .text {
+    color: #cccccc;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+section.section_automate .flag .numbers {
+    transform: scale(0);
+    transition: all 0.5s;
+    font-size: 22px;
+    position: absolute;
+    padding: 0px 8px 0px 8px;
+    top: -15px;
+    right: -8px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-color: #ff3b00;
+    border-radius: 50px;
+}
+
+
+body section.section_automate .flag.animate .numbers {
+    transform: scale(1);
+}
+
+section.section_marketing {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: #f9f8f8;
+    position: relative;
+}
+
+section.section_marketing .messengericon {
+    position: absolute;
+    right: 74px;
+    top: 85px;
+}
+
+section.section_marketing .messengericon img {
+    width: 86px;
+    height: 86px;
+    display: block;
+    margin: auto;
+}
+
+section.section_marketing .messengericon .text {
+    color: #cccccc;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+section.section_marketing .container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.section_footer {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f9f8f8;
+    position: relative;
+}
+
+section.section_footer .container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media (max-width: 1100px) {
+    section.section_marketing .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    section.section_footer .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 544px) {
+    section.section_marketing .container {
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+}
+
+section.section_marketing .container .sectiontext {
+    text-align: center;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    letter-spacing: -0.4px;
+}
+
+section.section_marketing .container .diagrams {
+    font-size: 18px;
+    text-align: left;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+}
+
+section.section_marketing .container .diagrams .diagram {
+    line-height: 15px;
+    margin-bottom: 30px;
+}
+
+section.section_marketing .container .diagrams .diagram > .caption {
+    margin-left: 20%;
+    padding-bottom: 15px;
+}
+
+section.section_marketing .container .diagrams .diagram .messenger {
+    display: flex;
+    margin-bottom: 4px;
+    color: #ccc;
+}
+
+section.section_marketing .container .diagrams .diagram .mail {
+    display: flex;
+    margin-bottom: 4px;
+    color: #ccc;
+}
+
+section.section_marketing .container .diagrams .diagram .messenger .left, section.section_marketing .container .diagrams .diagram .mail .left {
+    flex-basis: 20%;
+    padding-right: 4%;
+    text-align: right;
+    letter-spacing: -0.4px;
+}
+
+section.section_marketing .container .diagrams .diagram .messenger .left .caption, section.section_marketing .container .diagrams .diagram .mail .left .caption {
+    padding-bottom: 15px;
+}
+
+section.section_marketing .container .diagrams .diagram .messenger .right, section.section_marketing .container .diagrams .diagram .mail .right {
+    flex-basis: 80%;
+    display: flex;
+}
+
+section.section_marketing .container .diagrams .diagram .messenger .right .row-1, section.section_marketing .container .diagrams .diagram .mail .right .row-1 {
+    height: 15px;
+}
+
+section.section_marketing .container .diagrams .diagram .messenger .right .percent, section.section_marketing .container .diagrams .diagram .mail .right .percent {
+    padding-left: 2%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+section.section_marketing .container .diagrams .diagram .row-1 .fill {
+    width: 0%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+section.section_marketing .container .diagrams .diagram .messenger .right .row-1 .fill {
+    background-color: #208ef0;
+}
+
+section.section_marketing .container .diagrams .diagram .mail .right .row-1 .fill {
+    background-color: rgba(204, 204, 204, 0.64);
+}
+
+section.section_marketing .container .diagrams .diagram.openrates .messenger .right .row-1 {
+    width: 80%;
+}
+
+section.section_marketing .container .diagrams .diagram.openrates .mail .right .row-1 {
+    width: 25%;
+}
+
+section.section_marketing .container .diagrams .diagram.click .messenger .right .row-1 {
+    width: 30%;
+}
+
+section.section_marketing .container .diagrams .diagram.click .mail .right .row-1 {
+    width: 3%;
+}
+
+
+section.section_marketing .container .facts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    max-width: 815px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.section_marketing .container .facts .item {
+    transition: all 0.5s;
+    transform: scale(0);
+}
+
+section.section_marketing .container .facts .item .caption {
+    font-size: 136px;
+    line-height: 100%;
+    letter-spacing: -8px;
+}
+
+section.section_marketing .container .facts .item .text {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+section.section_marketing .container .facts .users .caption {
+    color: rgba(32, 142, 240, 0.64);
+}
+
+section.section_marketing .container .facts .average .caption {
+    color: rgba(32, 142, 240, 0.8);
+}
+
+section.section_marketing .container .facts .ctr .caption {
+    color: #208ef0;
+}
+
+.emoji {
+    vertical-align: middle;
+}
+
+.emoji.mobile {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #208ef0;
+}
+
+a span {
+    padding-bottom: 1px;
+}
+
+a:hover span {
+    background: linear-gradient(to right, #000000 0%, #000000 100%);
+    background-size: 1px 1px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+}
+
+section.section_welcome .container .sectiontext {
+    text-align: center;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    letter-spacing: -0.4px;
+}
+
+section.section_welcome .container .btn-button {
+    margin-bottom: 10px;
+}
+
+.btn-button.btn-facebook {
+    padding-left: 49px;
+}
+
+.btn-button {
+    background-color: #208ef0;
+    border-radius: 8px;
+    color: white !important;
+    position: relative;
+    font-size: 20px;
+    height: 48px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    padding: 9px 27px 0px 19px;
+}
+
+.btn-button.btn-facebook img {
+    width: 17px;
+    position: absolute;
+    top: 15px;
+    left: 16px;
+}
+
+a img {
+    border: none;
+}
+
+section.section_welcome .container .noregtext {
+    font-size: 16px;
+    color: #cccccc;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+section.section_welcome .iphone {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1150px;
+    position: relative;
+    margin-top: -35px;
+    z-index: 1;
+}
+
+body section.section_welcome .iphone.animate .phone {
+    transform: translateY(0) translateZ(1px);
+    opacity: 1;
+}
+
+section.section_welcome .iphone .phone {
+    width: 100%;
+    height: auto;
+    transition: all 1s;
+    transform: translateY(32px) translateZ(0px);
+    opacity: 0;
+    will-change: transform, opacity;
+}
+
+section.section_welcome .iphone .appicon {
+    position: absolute;
+    z-index: 3;
+    width: 200px;
+    height: 179px;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 0px;
+}
+
+section.section_welcome .iphone .appicon img {
+    max-width: 100%;
+    height: auto;
+}
+
+section.section_contact {
+    padding-top: 110px;
+    padding-bottom: 170px;
+    background-color: #f9f8f8;
+    position: relative;
+}
+
+section.section_footer .container .footerlinks {
+    display: flex;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+section.section_footer .container .footerlinks .column {
+    flex-basis: 27%;
+}
+
+section.section_footer .container .footerlinks .column .caption {
+    height: 45px;
+    color: #cccccc;
+    font-size: 20px;
+}
+
+section.section_footer .container .footerlinks .column .text {
+    color: #cccccc;
+}
+
+section.section_footer .container .footerlinks .column .links a {
+    display: block;
+    color: #9e9e9e;
+}
+
+section.section_footer .container .footerlinks .column .links a:hover {
+    color: #208ef0;
+}
+
+section.section_footer .container .footerlinks .column .sociallinks a {
+    margin-right: 8px;
+}
+
+section.section_footer .container .footerlinks .column .sociallinks a:hover {
+    opacity: 0.8;
+}
+
+section.section_footer .container .footerlinks .column .sociallinks a .mobile {
+    display: none;
+}
+
+section.section_footer .container .footerlinks .column.mini {
+    flex-basis: 19%;
+}
+
+.about-us {
+    padding-top: 150px;
+}
+
+.about-us .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+    padding: 0px;
+}
+
+@media (max-width: 544px) {
+    .about-us .container {
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+}
+
+.about-us h1 {
+    max-width: none;
+}
+
+@media (max-width: 544px) {
+    .about-us h1 {
+        font-size: 24px;
+        letter-spacing: 0px;
+    }
+}
+
+.about-us p {
+    letter-spacing: -0.4px;
+}
+
+.about-us .map {
+    max-width: 1024px;
+    margin: 5% auto 5% auto;
+}
+
+.about-us .addresstext {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.about-us .investors {
+    margin-top: 5%;
+}
+
+.about-us .investors .caption {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-us .investors a {
+    margin-right: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-us .investors a img {
+    vertical-align: middle;
+}
+
+.about-us .investors a.yandex {
+    margin-top: -4px;
+}
+
+.about-us .investors a:hover {
+    opacity: 0.8;
+}
+
+.about-us .messageus {
+    max-width: 400px;
+    margin-top: 9%;
+}
+
+.about-us .messageus .sayhello {
+    margin-bottom: 20px;
+    letter-spacing: -0.4px;
+}
+
+section.section_contact .container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+}
+
+@media (max-width: 1100px) {
+    section.section_contact .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 544px) {
+    section.section_contact .container {
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+    section.section_footer .container {
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+}
+
+section.section_contact .container .agencytext {
+    margin-bottom: 40px;
+}
+
+section.section_contact .container .sectioncaption {
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 34px;
+    max-width: none;
+}
+
+@media (max-width: 544px) {
+    section.section_contact .container .sectioncaption {
+        font-size: 32px;
+        letter-spacing: -1.6px;
+        margin-bottom: 15px;
+        margin-left: -1px;
+    }
+}
+
+section.section_contact .container .contactustext {
+    margin-bottom: 40px;
+}
+
+section.section_contact .container .btn-button {
+    margin-bottom: 40px;
+}
+
+section.section_contact .container .talkous {
+    color: #ccc;
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+section.section_contact .container .talkous a {
+    color: #9e9e9e;
+}
+
+section.section_contact .container .talkous a:hover {
+    color: #208ef0;
+}
+
+@media (max-width: 1100px) {
+    section.section_welcome .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 544px) {
+    body {
+        letter-spacing: -0.4px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    section.section_welcome .container {
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+
+    section.section_welcome .container .sectioncaption {
+        font-size: 32px;
+        letter-spacing: -1.6px;
+        margin-bottom: 15px;
+        margin-left: -1px;
+    }
+
+    .emoji.desktop {
+        display: none;
+    }
+
+    .emoji.mobile {
+        display: inline-block;
+    }
+
+    section.section_welcome {
+        text-align: left;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    section.section_welcome .container .sectiontext {
+        text-align: left;
+    }
+
+    section.section_welcome .container .btn-button {
+        display: none;
+    }
+
+    section.section_welcome .container .noregtext {
+        display: none;
+    }
+
+    section.section_welcome .iphone img.phone {
+        width: 200%;
+        margin-left: -30%;
+    }
+
+    section.section_welcome .iphone .appicon {
+        width: 119px;
+        height: 106px;
+        margin-left: -60px;
+        bottom: 50px;
+    }
+
+    section.section_welcome .container .buildtext {
+        display: none;
+    }
+
+    section.section_welcome .container .quoteblock {
+        margin-top: -100px;
+        position: relative;
+        z-index: 2;
+        margin-left: -22px;
+        margin-right: -22px;
+        padding: 20px 22px 20px 22px;
+    }
+
+    section.section_welcome .container .quoteblock .up .name {
+        display: block;
+        margin-top: 10px;
+        margin-left: 0px;
+        font-size: 16px;
+    }
+
+    section.section_welcome .container .quoteblock .up .name .desktop {
+        display: none;
+    }
+
+    section.section_welcome .container .quoteblock .up .name .mobile {
+        display: inline-block;
+    }
+
+    section.section_welcome .container .quoteblock .down .bytelondon {
+        width: 53px;
+        height: 59px;
+    }
+
+    section.section_welcome .container .quoteblock .down .bytelondon .desktop {
+        display: none;
+    }
+
+    section.section_welcome .container .quoteblock .down .bytelondon .mobile {
+        display: block;
+    }
+
+    section.section_welcome .container .magazines {
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+
+    section.section_welcome .container .magazines a {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    section.section_welcome .container .magazines a img {
+        max-width: 80%;
+    }
+
+    section.section_welcome .container .magazines a .desktop {
+        display: none;
+    }
+
+    section.section_welcome .container .magazines a .mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section.section_welcome .container .magazines .techcrunch {
+        padding-top: 3px;
+    }
+
+    section.section_welcome .container .magazines .techcrunch img {
+        width: 42px;
+    }
+
+    section.section_welcome .container .magazines .economist {
+        padding-top: 2px;
+    }
+
+    section.section_welcome .container .magazines .economist img {
+        width: 49px;
+    }
+
+    section.section_welcome .container .magazines .forbes {
+        padding-top: 4px;
+    }
+
+    section.section_welcome .container .magazines .forbes img {
+        width: 76px;
+    }
+
+    section.section_welcome .container .magazines .wallstreet {
+        padding-top: 0px;
+    }
+
+    section.section_welcome .container .magazines .wallstreet img {
+        width: 96px;
+        opacity: 0.24;
+    }
+
+    section.section_welcome .container .magazines .bloomberg {
+        padding-top: 7px;
+    }
+
+    section.section_welcome .container .magazines .bloomberg img {
+        width: 85px;
+    }
+
+    section.section_welcome .container .magazines .vb {
+        padding-top: 5px;
+    }
+
+    section.section_welcome .container .magazines .vb img {
+        width: 30px;
+    }
+
+    section.section_automate {
+        text-align: left;
+        padding-top: 40px;
+    }
+
+    section.section_automate .container .iphone {
+        height: auto;
+        margin-left: -18px;
+        margin-right: -18px;
+        width: auto;
+        margin-top: 30px;
+    }
+
+    section.section_automate .container .iphone img.phone {
+        display: none;
+    }
+
+    section.section_automate .container .iphone .phoneup {
+        display: none;
+    }
+
+    section.section_automate .container .iphone .shadow {
+        display: none;
+    }
+
+    section.section_automate .container .iphone .notifications {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        padding-bottom: 4px;
+    }
+
+    section.section_automate .container .iphone .notifications .item {
+        margin-bottom: 4px;
+        border-radius: 10px;
+        padding: 8px;
+    }
+
+    section.section_automate .container .iphone .notifications .item .caption {
+        font-size: 11px;
+        margin-bottom: 4px;
+    }
+
+    section.section_automate .container .iphone .notifications .item .caption img {
+        width: 15px;
+        height: 15px;
+        margin-top: -3px;
+    }
+
+    section.section_automate .container .iphone .notifications .item .caption .now {
+        font-size: 12px;
+        margin-right: 1px;
+    }
+
+    section.section_automate .container .iphone .notifications .item .name {
+        margin-bottom: 0px;
+        font-size: 13px;
+    }
+
+    section.section_automate .container .iphone .notifications .item:last-child {
+        margin-bottom: -22px;
+    }
+
+    section.section_automate .flag {
+        display: none;
+    }
+
+    section.section_marketing .container .diagrams {
+        font-size: 16px;
+        margin-top: 35px;
+        margin-right: -35px;
+    }
+
+    section.section_marketing .container .diagrams .diagram {
+        margin-bottom: 25px;
+    }
+
+    section.section_marketing .container .diagrams .diagram > .caption {
+            margin-left: 0%;
+    }
+
+    section.section_marketing .container .diagrams .diagram .messenger, section.section_marketing .container .diagrams .diagram .mail {
+        flex-wrap: wrap;
+    }
+
+    section.section_marketing .container .diagrams .diagram .messenger .left, section.section_marketing .container .diagrams .diagram .mail .left {
+        flex-basis: 100%;
+        order: 2;
+    }
+
+    section.section_marketing .container .diagrams .diagram .messenger .left .caption, section.section_marketing .container .diagrams .diagram .mail .left .caption {
+        text-align: left;
+        padding-top: 7px;
+    }
+
+    section.section_marketing .container .diagrams .diagram .messenger .right, section.section_marketing .container .diagrams .diagram .mail .right {
+        flex-basis: 100%;
+    }
+
+    section.section_marketing .container .facts {
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    section.section_marketing .container .facts .item {
+        margin-bottom: 15px;
+        width: 50%;
+    }
+
+    section.section_marketing .container .facts .item .caption {
+        font-size: 67px;
+        letter-spacing: -2px;
+    }
+
+    section.section_marketing .container .facts .item .text {
+        font-size: 16px;
+        padding-left: 8px;
+    }
+
+    section.section_templates .container {
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+
+    section.section_templates {
+        text-align: left;
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+
+    section.section_templates .container .sectiontext {
+        text-align: left;
+    }
+
+    section.section_templates .overflow {
+        height: 321px;
+        margin-top: 45px;
+    }
+
+    section.section_templates .overflow .mobilelogos {
+        display: block;
+    }
+
+    section.section_templates .sites {
+        display: none;
+        left: 5%;
+        margin-left: 0px;
+    }
+
+    section.section_contact {
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+
+    section.section_contact .container .contactustext {
+        margin-bottom: 20px;
+    }
+
+    section.section_contact .container .btn-button {
+        margin-bottom: 40px;
+    }
+
+    section.section_contact .container .talktous {
+        font-size: 16px;
+    }
+
+    section.section_footer {
+        text-align: left;
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+
+    section.section_footer .container .footerlinks {
+        flex-wrap: wrap;
+        padding-bottom: 0px;
+    }
+
+    section.section_footer .container .footerlinks .column {
+        flex-basis: 100%;
+        padding-bottom: 30px;
+    }
+
+    section.section_footer .container .footerlinks .column.mini {
+        flex-basis: 100%;
+    }
+
+    section.section_footer .container .footerlinks .column .caption {
+        height: 42px;
+    }
+
+    section.section_footer .container .footerlinks .column .links a {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    section.section_footer .container .footerlinks .column .sociallinks {
+        padding-right: 28px;
+    }
+
+    section.section_footer .container .footerlinks .column .sociallinks a {
+        padding-right: 25px;
+    }
+
+    section.section_footer .container .footerlinks .column .sociallinks a .desktop {
+        display: none;
+    }
+
+    section.section_footer .container .footerlinks .column .sociallinks a .mobile {
+        display: inline-block;
+    }
+
+    .about-us, .pricing {
+        padding-top: 80px;
+    }
+
+    .about-us .map {
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+    .about-us .addresstext {
+        font-size: 16px;
+    }
+
+    .about-us .investors {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .about-us .investors .caption {
+        font-size: 16px;
+        color: #ccc;
+        margin-bottom: 20px;
+    }
+
+    .about-us .investors a {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about-us .messageus {
+        margin-bottom: 30px;
+    }
+
+}
+
+body section.section_marketing .container .diagrams .diagram .animate .row-1 .fill {
+    width: 100%;
+}
+
+body section.section_marketing .container .diagrams .diagram .animate .right .percent {
+    opacity: 1;
+}
+
+body section.section_marketing .container .facts .item.animate {
+    transform: scale(1);
+}
+
+body section.section_templates .overflow.animate .mobilelogos {
+    transform: translateX(-1830px);
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+
+.overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-popup {
+    position: fixed;
+    left: 0;
+    top: 20%;
+    margin: 0;
+    width: 100%;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 15;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all .5s ease;
+}
+
+.main-popup.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(10px);
+    transition: all .5s ease;
+    z-index: 15;
+}
+
+@media (min-width: 544px) {
+    .main-popup {
+        width: 500px;
+        left: 50%;
+        margin: 0 0 0 -250px;
+    }
+}
+
+.popup-header {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 62px;
+    width: 100%;
+}
+
+#popup-close-button a {
+    position: absolute;
+    right: 10px;
+    top: -30px;
+    width: 22px;
+    height: 22px;
+}
+
+#popup-close-button a::before {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 3px;
+    height: 25px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#popup-close-button a::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 3px;
+    height: 25px;
+    background-color: #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.popup-header ul {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-header ul li {
+    text-align: center;
+    list-style: none;
+    width: 50%;
+    float: left;
+}
+
+.popup-header ul li a {
+    display: block;
+    padding: 20px 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+#sign-in {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px 0 0 0;
+}
+
+#sign-in.active {
+    color: #007bff;
+    background-color: transparent;
+}
+
+#register {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0 8px 0 0;
+}
+
+#register.active {
+    color: #007bff;
+    background-color: transparent;
+}
+
+.popup-content {
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+}
+
+form.sign-in {
+    position: relative;
+    top: 40px;
+    left: 0;
+    font-size: 1em;
+    opacity: 1;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+
+form.sign-in.move-left {
+    opacity: 0;
+    transform: translateX(-450px);
+}
+
+form label {
+    font-size: 0.8em;
+    /*color: #ceaee8;*/
+    margin-left: 23px;
+}
+
+form.sign-in input {
+    border-radius: 5px;
+    width: 90%;
+    height: 40px;
+    margin: 5px 5% 30px 5%;
+    padding: 10px;
+    font-size: 1em;
+ /*   color: #ceaee8;*/
+    outline: none;
+    border: none;
+}
+
+form.sign-in input[type=text] {
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form.sign-in input[type=password] {
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input#submit1 {
+    background-color: #4CAF50;
+    color: #fff;
+    height: 50px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 25px;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+}
+
+input#submit1:hover {
+    background-color: #45a049;
+}
+
+input#submit2 {
+    background-color: #4CAF50;
+    color: #fff;
+    height: 50px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 25px;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+}
+
+input#submit2:hover {
+    background-color: #45a049;
+}
+
+form.register {
+    position: relative;
+    top: -330px;
+    left: 0;
+    font-size: 1em;
+    opacity: 0;
+    transform: translateX(450px);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+
+
+form.register input[type=text] {
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+form.register input[type=password]#password-register {
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form.register input[type=password]#password-confirmation {
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+form.register.move-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+form.register input {
+    border-radius: 5px;
+    width: 90%;
+    height: 40px;
+    margin: 0px 5% 5px 5%;
+    padding: 10px;
+    font-size: 1em;
+   /* color: #ceaee8;*/
+    outline: none;
+    border: none;
+}
+
+.btn-sign {
+    /*font-size: 100%;*/
+  /*  float: left;*/
+}
+
+
+p.check-mark {
+    position: relative;
+    left: 50%;
+    width: 200px;
+    margin: 0 0 0 -100px;
+    padding: 0;
+    text-align: center;
+   /* color: #007bff;*/
+    font-size: .8em;
+}
+
+p.check-mark a {
+    color: #007bff;
+}
+
+p.check-mark input {
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    /*color: #007bff;*/
+    outline: none;
+    border: none;
+}
+
+p.check-mark label {
+    margin-left: 5px;
+}
+
+
+
+.footer {
+    height: 40px;
+    background-color: transparent;
+}
