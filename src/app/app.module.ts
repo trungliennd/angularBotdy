@@ -5,15 +5,19 @@ import {AppComponent} from './app.component';
 import {HomeComponent} from "./home.component";
 import {appRoutes} from "./app.routes";
 import {AboutComponent} from "./about.component";
+import {SignInComponent} from "./user/sign-in/sign-in.component";
+import {UserService} from "./shared/user.service";
+import {SignUpComponent} from "./user/sign-up/sign-up.component";
 
 @NgModule({
   declarations: [
       AppComponent,
       HomeComponent,
-      AboutComponent
+      AboutComponent,
+      SignInComponent
   ],
   imports: [
-    BrowserModule, appRoutes
+    BrowserModule, appRoutes, UserService
   ],
   providers: [],
   bootstrap: [AppComponent]
