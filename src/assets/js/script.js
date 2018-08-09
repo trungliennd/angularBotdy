@@ -21,13 +21,18 @@ animate = (function (_this) {
     };
 })(this);
 
+$('.navbar-nav .nav-link').click(function(){
+    return setTimeout(function () {
+        return $('.section_welcome .iphone').addClass('animate');
+        }, 200);
+});
+
 var App = (function () {
         var self = this;
         this.module_name = 'App';
         var animate, scale;
         $((function (_this) {
             return function () {
-
                 if ($('html').width() >= 544) {
                     $(window).load(function () {
                         return window.requestAnimationFrame(function () {

@@ -5,7 +5,8 @@ import {HttpErrorResponse} from "@angular/common/http";
 
 @Component({
     selector: 'app-sign-in',
-    templateUrl: './sign-in.component.html'
+    templateUrl: './sign-in.component.html',
+    styleUrls: ['../user.component.css']
 })
 
 export class SignInComponent implements  OnInit {
@@ -18,7 +19,7 @@ export class SignInComponent implements  OnInit {
     ngOnInit(): void {
     }
 
-    onSubmit(userName, password) {
+    OnSubmit(userName, password) {
         this.userService.userAuthentication(userName, password).subscribe((data: any) => {
             localStorage.setItem('userToken', data.access_token);
             this.router.navigate(['/home']);
