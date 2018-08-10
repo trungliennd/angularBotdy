@@ -22,9 +22,14 @@ animate = (function (_this) {
 })(this);
 
 $('.navbar-nav .nav-link').click(function(){
-    return setTimeout(function () {
+    setTimeout(function () {
         return $('.section_welcome .iphone').addClass('animate');
         }, 200);
+    animate($('.section_automate .flag')[0], 500);
+    animate($('.diagram.openrates .messenger')[0], 500);
+    animate($('.diagram.openrates .mail')[0], 1000);
+    animate($('.diagram.click .messenger')[0], 1500);
+    animate($('.diagram.click .mail')[0], 2000);
 });
 
 var App = (function () {

@@ -3,6 +3,7 @@ import {Router} from "@angular/router";
 import {UserService} from "../../shared/user.service";
 import {HttpErrorResponse} from "@angular/common/http";
 
+
 @Component({
     selector: 'app-sign-in',
     templateUrl: './sign-in.component.html',
@@ -12,11 +13,13 @@ import {HttpErrorResponse} from "@angular/common/http";
 export class SignInComponent implements  OnInit {
 
     isLoginError: boolean = false;
+    isCheckRemember: boolean = false;
     constructor(private userService: UserService, private router: Router) {
 
     }
 
     ngOnInit(): void {
+
     }
 
     OnSubmit(userName, password) {
@@ -27,4 +30,6 @@ export class SignInComponent implements  OnInit {
             this.isLoginError = true;
         });
     }
+
+
 }

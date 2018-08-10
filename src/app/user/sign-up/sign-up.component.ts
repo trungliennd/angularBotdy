@@ -13,6 +13,7 @@ import {UserService} from "../../shared/user.service";
 export class SignUpComponent implements OnInit {
     user: User;
     emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+    isCheckTerm: boolean = false;
 
     constructor(private userService: UserService, private toastr: ToastrService) {
 
@@ -36,13 +37,15 @@ export class SignUpComponent implements OnInit {
     }
 
     OnSubmit(form: NgForm) {
-        this.userService.registerUser(form.value).subscribe((data: any)=>{
-           if(data.Succeeded == true) {
-               this.resetForm(form);
-               this.toastr.success('User registration successful');
-           }else {
-               this.toastr.error(data.Errors[0]);
-           }
-        });
+        if(this.isCheckTerm) {
+            this.userService.registerUser(form.value).subscribe((data: any) => {
+                if (data.Succeeded == true) {
+                    this.resetForm(form);
+                    this.toastr.success('User registration successful');
+                } else {
+                    this.toastr.error(data.Errors[0]);
+                }
+            });
+        }
     }
 }

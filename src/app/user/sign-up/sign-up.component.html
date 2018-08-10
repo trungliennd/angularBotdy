@@ -1,4 +1,5 @@
-<form class="col s12 white" #userRegistrationForm="ngForm" (ngSubmit)="OnSubmit(userRegistrationForm)">
+<div id="signup">
+<!--<form class="col s12 white" #userRegistrationForm="ngForm" (ngSubmit)="OnSubmit(userRegistrationForm)">
     <div class="row">
         <div class="input-field col s6">
             <input class="validate" type="text" name="UserName" #UserName="ngModel" [(ngModel)]="user.UserName" required>
@@ -30,4 +31,34 @@
             <button [disabled]="!userRegistrationForm.valid" class="btn-large btn-submit" type="submit">Submit</button>
         </div>
     </div>
-</form>
+</form>-->
+    <form class="form" #userRegistrationForm="ngForm" (ngSubmit)="OnSubmit(userRegistrationForm)">
+        <p class="fieldset">
+            <label class="image-replace username" for="signup-username">Username</label>
+            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username" name="UserName" #UserName="ngModel" [ngModel]="user.UserName" required>
+            <span class="error-message">Your username can only contain numeric and alphabetic symbols!</span>
+        </p>
+
+        <p class="fieldset">
+            <label class="image-replace email" for="signup-email">E-mail</label>
+            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail" name="Useremail" #Useremail="ngModel" [ngModel]="user.Email" required>
+            <span class="error-message">Enter a valid email address!</span>
+        </p>
+
+        <p class="fieldset">
+            <label class="image-replace password" for="signup-password">Password</label>
+            <input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password" name="Password" #Password="ngModel" [(ngModel)]="user.Password" minlength="6"required>
+            <a href="#0" class="hide-password">Show</a>
+            <span class="error-message">Your password has to be at least 6 characters long!</span>
+        </p>
+
+        <p class="fieldset">
+            <input type="checkbox" id="accept-terms-1" [checked]="isCheckTerm" (change)="isCheckTerm = !isCheckTerm">
+            <label for="accept-terms-1">I agree to the <a class="accept-terms-1" href="#0">Terms</a></label>
+        </p>
+
+        <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Create account" [disabled]="!userRegistrationForm.valid">
+        </p>
+    </form>
+</div>

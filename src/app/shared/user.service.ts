@@ -32,4 +32,10 @@ export class UserService {
         return  this.http.get(this.rootUrl+'/api/GetUserClaims');
     }
 
+    forgetPassWord(email) {
+        var data = "email=" + email + "&forget=true";
+        var reqHeader = new HttpHeaders({'Content-Type': 'application/x-www-urlencoded','No-Auth':'True'});
+        return this.http.post(this.rootUrl + '/token', data, {headers: reqHeader});
+    }
+
 }
